@@ -2,7 +2,7 @@
 
 ### What is $H_s$?
 
-Significant wave height, or $H_s$ is a statistical quantity that describes the amplitude of the highest $\frac{1}{3} of recorded waves. It can be thought of as the waves that you see when looking at the ocean.
+Significant wave height, or $H_s$, is a statistical quantity that describes the amplitude of the highest $\frac{1}{3}$ of recorded waves. It can be thought of as the waves that you see when looking at the ocean.
 
 ### Different processes that can modify $H_s$:
 
