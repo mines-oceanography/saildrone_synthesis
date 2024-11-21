@@ -1,6 +1,4 @@
-# Welcome to your Jupyter Book
-
-## Introduction
+# Introduction
 
 The interactions between winds, waves, and currents are responsible for the exchange of mass, momentum, and heat in the air-sea boundary layer (Villas Bôas and Pizzo 2021). Waves serve as the interface between the atmosphere and ocean, playing a key role in the air-sea fluxes. Understanding the role of waves in these fluxes is essential to better understand the interplay between the atmospheric and oceanic systems of the Earth (Cavaleri et al. 2012).
 
