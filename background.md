@@ -1,8 +1,10 @@
 # Background
 
-### Different processes that can modify $H_s$:
+### What is $H_s$?
 
-- what is $H_s$?
+Significant wave height, or $H_s$ is a statistical quantity that describes the amplitude of the highest $\frac{1}{3} of recorded waves. It can be thought of as the waves that you see when looking at the ocean.
+
+### Different processes that can modify $H_s$:
 
 **Enhanced winds at the surface (effect from storms):** 
 Storms produce strong winds which create waves through an exchange of momentum between the atmosphere and ocean (Holthuijsen 2010).  These waves are known as wind-sea. Wind-sea waves typically have shorter periods and amplitudes resulting in less wave energy. Their larger counterparts, known as swell, have longer periods and much higher amplitudes. Swell do not typically feel the affect of winds because of their already high wave energy. Because of our focus on submesoscale processes, we will not be focusing on this fairly large scale process but it is worth being noted due to appearing in our analysis.
