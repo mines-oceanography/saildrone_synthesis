@@ -7,3 +7,5 @@ chapters:
 - file: background
 - file: methods
 - file: results
+  sections:
+  - file: gwen_notebook_test
