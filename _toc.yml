@@ -3,7 +3,13 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: background
-- file: methods
-- file: results
+
+parts:
+  - caption: Background and Methods
+    chapters:
+    - file: background
+    - file: methods
+  - caption: Results
+    chapters:
+    - file: results
+    - file: poster_front_summary
