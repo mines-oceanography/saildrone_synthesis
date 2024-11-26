@@ -3,9 +3,13 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: background
-- file: methods
-- file: results
-  sections:
-  - file: gwen_notebook_test
+
+parts:
+ - caption: background and method
+   chapters:
+   - file: background
+   - file: methods
+ - caption: Results
+   chapters:
+   - file: results
+   - file: gwen_notebook_test
