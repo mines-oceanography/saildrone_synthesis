@@ -7,9 +7,9 @@ root: intro
 parts:
   - caption: Background and Methods
     chapters:
-    - file: background
-    - file: methods
+    - file: Background
+    - file: Methods
   - caption: Results
     chapters:
-    - file: results
+    - file: Results
     - file: poster_front_summary
