@@ -7,7 +7,7 @@ Significant wave height, or $H_s$, is a statistical quantity that describes the 
 ### Different processes that can modify $H_s$:
 
 **Enhanced winds at the surface (effect from storms):** 
-Storms produce strong winds which create waves through an exchange of momentum between the atmosphere and ocean (Holthuijsen 2010).  These waves are known as wind-sea. Wind-sea waves typically have shorter periods and amplitudes resulting in less wave energy. Their larger counterparts, known as swell, have longer periods and much higher amplitudes. Swell do not typically feel the affect of winds because of their already high wave energy. Because of our focus on submesoscale processes, we will not be focusing on this fairly large scale process but it is worth being noted due to appearing in our analysis.
+Storms produce strong winds which create waves through an exchange of momentum between the atmosphere and ocean (Holthuijsen 2010).  These waves are known as wind-sea. Wind-sea waves typically have shorter periods and amplitudes resulting in less wave energy. Their larger counterparts, known as swell, have longer periods and much higher amplitudes. Swell do not typically feel the affect of winds because of their already high wave energy. In contrast to the spatial scale we are focusing on (<30 km), this process occurs at larger scales (>30 km).
 
 **Current induced refraction (non-local effect):** 
 Refraction leads to convergences and divergences of wave action through changes in wave direction. These changes in wave directions are caused by spatial gradients in current velocity. When a gradient in velocity is present, there is vorticity that induces a change in wave direction.
