@@ -9,5 +9,3 @@ Observations of the effects of winds and currents on waves have been primarily f
 In the SUB-MESOSCALE OCEAN DYNAMICS EXPERIMENT (SMODE), Saildrones were used to collect colocalized current, wind, and wave observations along their trajectories. A library of fronts was identified to provide an insight into the three-way coupling between currents, winds, and waves in the submesoscale. 
 
 This analysis utilizes co-located Saildrone observations to investigate how variations in winds and currents influence wave characteristics.
-
-Test edit.
