@@ -8,7 +8,7 @@ Significant wave height ($H_s$), is a statistical quantity that describes the am
 
 **Enhanced winds at the surface (effect from storms):** 
 Storms produce strong winds which create waves through an exchange of momentum between the atmosphere and ocean (Holthuijsen 2010).  These waves are known as wind-sea. Wind-sea waves typically have shorter periods and amplitudes resulting in less wave energy. Their larger counterparts, known as swell, have longer periods and much higher amplitudes. Swell do not typically feel the affect of winds because of their already high wave energy. In contrast to the spatial scale we are focusing on (<30 km), this process occurs at larger scales (>30 km).
-![non-local_winds](./sketches/non-local_enhanced_winds.jpg)
+![non-local_winds](./sketches/non-local_winds.jpg)
 **Figure 1: A sketch visualizing the effect of non-local winds on wave height. Weak winds result in smaller waves and a smoother sea. Strong winds result in higher waves and a rougher sea. For this effect to be present in the $H_s$ signature, the winds must blow for long periods of time. 1a represents a case with low winds and a low resulting wave height. 1b represents a case with high winds and a high resulting wave height.**
 
 **Current induced refraction (non-local effect):** 
