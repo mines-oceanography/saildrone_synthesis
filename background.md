@@ -19,4 +19,4 @@ When crossing from the cold side to the warm side of a temperature front, there 
 
 **Concertina effect (local effect):** 
 This effect can work both ways. If current and wave directions are aligned and moving in the same direction, wave height can decrease from currents stretching the waves and influencing a longer period. If current and wave directions are aligned and moving in opposing directions, wave height can increase from currents pushing the into waves and influencing a shorter period. The impact of this effect is stronger on wind-sea waves because of their lower energy.
-![concertina_sketch](concertina_sketch.jpg)
+![concertina_sketch](./sketches/concertina_sketch.jpg)
