@@ -1,3 +1,4 @@
+(content:methods:labels)=
 # Methods
 
 Data analysis began with identifying potential fronts of interest. This was done with an interactive plot using the hvPlot library. We used sea surface temperature as our indicator, looking for gradients of at least 1˚C. Then, to verify the front, we looked at the $H_s$ signature to make sure the wave data was coherent and did not have sporadic variations. Once these checks were fulfilled, the start and end date, time, Saildrone ID, along-track distance, and any notes on the front were saved in a table. 
