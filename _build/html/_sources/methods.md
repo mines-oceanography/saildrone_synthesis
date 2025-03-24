@@ -5,5 +5,6 @@ Data analysis began with identifying potential fronts of interest. This was done
 A secondary analysis was performed on all identified fronts of interest using a subplot function that plots the Saildrone SST and surface current speed against model data from the Navy Coastal Operational Model (NCOM), $H_s$ and $T_p$ plotted against model data from WAVEWATCH III, and the wind speed plotted against the fifth generation ECMWF atmospheric reanalysis (ERA-5).
 
 ### An Example of Interactive Plot
-```html
+```{raw} html
 <iframe src="./figures/sd_1062_interactive_plot.html" width="100%" height="500"></iframe>
+
