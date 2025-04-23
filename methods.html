@@ -30,7 +30,7 @@
   <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -45,7 +45,7 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
@@ -58,8 +58,6 @@
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'methods';</script>
@@ -343,7 +341,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -359,6 +359,14 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-of-interactive-plot">An Example of Interactive Plot</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -369,11 +377,13 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="methods">
-<span id="content-methods-labels"></span><h1>Methods<a class="headerlink" href="#methods" title="Link to this heading">#</a></h1>
-<p>Data analysis began with identifying potential fronts of interest. This was done with an interactive plot (figure 1) using the hvPlot library. We used sea surface temperature as our indicator, looking for gradients of at least 1˚C. Then, to verify the front, we looked at the <span class="math notranslate nohighlight">\(H_s\)</span> signature to make sure the wave data was coherent and did not have sporadic variations. Once these checks were fulfilled, the start and end date, time, Saildrone ID, along-track distance, and any notes on the front were saved in a table.
+<span id="ontent-methods-labels"></span><h1>Methods<a class="headerlink" href="#methods" title="Link to this heading">#</a></h1>
+<p>Data analysis began with identifying potential fronts of interest. This was done with an interactive plot using the hvPlot library. We used sea surface temperature as our indicator, looking for gradients of at least 1˚C. Then, to verify the front, we looked at the <span class="math notranslate nohighlight">\(H_s\)</span> signature to make sure the wave data was coherent and did not have sporadic variations. Once these checks were fulfilled, the start and end date, time, Saildrone ID, along-track distance, and any notes on the front were saved in a table.
 A secondary analysis was performed on all identified fronts of interest using a subplot function that plots the Saildrone SST and surface current speed against model data from the Navy Coastal Operational Model (NCOM), <span class="math notranslate nohighlight">\(H_s\)</span> and <span class="math notranslate nohighlight">\(T_p\)</span> plotted against model data from WAVEWATCH III, and the wind speed plotted against the fifth generation ECMWF atmospheric reanalysis (ERA-5).</p>
-<p><img alt="interactive_plot" src="_images/sd_1062_interactive_plot.html" />
-<strong>Figure 1: Interactive subplot used to identify potential fronts of interest. Chase your own front!</strong></p>
+<section id="an-example-of-interactive-plot">
+<h2>An Example of Interactive Plot<a class="headerlink" href="#an-example-of-interactive-plot" title="Link to this heading">#</a></h2>
+<iframe src="./figures/sd_1062_interactive_plot.html" width="100%" height="1300px" style="border:none; max-width: 100%;"></iframe>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -430,6 +440,22 @@ A secondary analysis was performed on all identified fronts of interest using a 
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-of-interactive-plot">An Example of Interactive Plot</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
