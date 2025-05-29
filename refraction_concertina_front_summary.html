@@ -1,0 +1,685 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Impact of local and non-local modualation of significant wave height &#8212; Observing interactions between currents, winds, and waves</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'refraction_concertina_front_summary';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Storm arrival case" href="poster_front_summary.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/smode_logo.png" class="logo__image only-light" alt="Observing interactions between currents, winds, and waves - Home"/>
+    <img src="_static/smode_logo.png" class="logo__image only-dark pst-js-only" alt="Observing interactions between currents, winds, and waves - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Background and Methods</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="methods.html">Methods</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Results</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="results.html">Results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="poster_front_summary.html">Storm arrival case</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Impact of local and non-local modualation of significant wave height</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/mines-oceanography/saildrone_synthesis" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/mines-oceanography/saildrone_synthesis/issues/new?title=Issue%20on%20page%20%2Frefraction_concertina_front_summary.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/refraction_concertina_front_summary.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Impact of local and non-local modualation of significant wave height</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jackson-krieger">Jackson Krieger</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-and-summary">Analysis and summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="impact-of-local-and-non-local-modualation-of-significant-wave-height">
+<h1>Impact of local and non-local modualation of significant wave height<a class="headerlink" href="#impact-of-local-and-non-local-modualation-of-significant-wave-height" title="Link to this heading">#</a></h1>
+<section id="jackson-krieger">
+<h2>Jackson Krieger<a class="headerlink" href="#jackson-krieger" title="Link to this heading">#</a></h2>
+<p><strong>10/29/2024</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/Pilot_Analysis_NBs&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">saildrone_analysis</span> <span class="k">as</span> <span class="nn">sd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pilot campaign data</span>
+<span class="n">pilot_1062</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/Saildrones/SMODE_Pilot_1062.nc&#39;</span><span class="p">)</span>
+<span class="n">pilot_1072</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/Saildrones/SMODE_Pilot_1072.nc&#39;</span><span class="p">)</span>
+<span class="n">pilot_1073</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/Saildrones/SMODE_Pilot_1073.nc&#39;</span><span class="p">)</span>
+<span class="n">pilot_1074</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/Saildrones/SMODE_Pilot_1074.nc&#39;</span><span class="p">)</span>
+<span class="n">pilot_1075</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/Saildrones/SMODE_Pilot_1075.nc&#39;</span><span class="p">)</span>
+
+<span class="c1"># SMODE data</span>
+<span class="n">wind_smode_2021</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/smode_data/wind_smode_2021.nc&#39;</span><span class="p">)</span>
+
+<span class="c1"># NCOM</span>
+<span class="n">ncom</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/smode_data/NCOM_2021.nc&#39;</span><span class="p">)</span>
+
+<span class="c1"># Current</span>
+<span class="n">current_2021</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/smode_data/current_2021.nc&#39;</span><span class="p">)</span>
+
+<span class="c1"># WAVEWATCH</span>
+<span class="n">ww_2021</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/smode_data/WW3_SMODE_Pilot.nc&#39;</span><span class="p">)</span>
+
+<span class="c1"># Buoy</span>
+<span class="n">buoy_ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;/Users/jkrieger/work/member-Krieger/saildrone_analysis/smode_data/029p1_historic.nc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;sans-serif&#39;</span>  <span class="c1"># Choose desired font family</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">15</span> <span class="c1"># increase fontsize</span>
+
+<span class="n">date_saildrone_obs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">datetime64</span><span class="p">(</span><span class="s1">&#39;2021-10-30T11:00&#39;</span><span class="p">)</span> <span class="c1"># studied date</span>
+<span class="n">buoy_slice</span> <span class="o">=</span> <span class="n">buoy_ds</span><span class="o">.</span><span class="n">sel</span><span class="p">(</span><span class="n">waveTime</span> <span class="o">=</span> <span class="n">date_saildrone_obs</span><span class="p">,</span> <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;nearest&#39;</span><span class="p">)</span>
+
+<span class="c1"># compute 2d spectrum</span>
+<span class="n">ds_spec</span> <span class="o">=</span> <span class="n">sd</span><span class="o">.</span><span class="n">buoy_spectrum2d</span><span class="p">(</span><span class="n">buoy_slice</span><span class="o">.</span><span class="n">waveEnergyDensity</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>\
+                          <span class="n">buoy_slice</span><span class="o">.</span><span class="n">waveA1Value</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> \
+                          <span class="n">buoy_slice</span><span class="o">.</span><span class="n">waveA2Value</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>\
+                          <span class="n">buoy_slice</span><span class="o">.</span><span class="n">waveB1Value</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>\
+                          <span class="n">buoy_slice</span><span class="o">.</span><span class="n">waveB2Value</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+                          <span class="n">buoy_slice</span><span class="o">.</span><span class="n">waveFrequency</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>\
+                          <span class="n">date_saildrone_obs</span><span class="p">,</span>\
+                          <span class="n">dirs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">365</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+
+<span class="n">hs</span><span class="p">,</span> <span class="n">tp</span><span class="p">,</span> <span class="n">dp</span><span class="p">,</span> <span class="n">sigma_th</span> <span class="o">=</span> <span class="n">sd</span><span class="o">.</span><span class="n">compute_wave_parameter</span><span class="p">(</span><span class="n">ds_spec</span><span class="p">)</span> <span class="c1"># compute wave parameters to display in directional spectrum plot</span>
+
+<span class="n">start_date</span> <span class="o">=</span> <span class="s1">&#39;2021-10-30T11:00:00.000000000&#39;</span> <span class="c1"># start date and time of front</span>
+<span class="n">end_date</span> <span class="o">=</span> <span class="s1">&#39;2021-10-30T22:00:00.000000000&#39;</span> <span class="c1"># end date and time of front</span>
+<span class="n">saildrones</span> <span class="o">=</span> <span class="p">[</span><span class="n">pilot_1062</span><span class="p">,</span> <span class="n">pilot_1072</span><span class="p">,</span> <span class="n">pilot_1073</span><span class="p">,</span> <span class="n">pilot_1074</span><span class="p">,</span> <span class="n">pilot_1075</span><span class="p">]</span> <span class="c1"># array of saildrone data </span>
+<span class="n">models</span> <span class="o">=</span> <span class="p">[</span><span class="n">ncom</span><span class="p">,</span> <span class="n">wind_smode_2021</span><span class="p">,</span> <span class="n">current_2021</span><span class="p">,</span> <span class="n">ww_2021</span><span class="p">]</span> <span class="c1"># array of model data</span>
+<span class="n">front_fig</span> <span class="o">=</span> <span class="n">sd</span><span class="o">.</span><span class="n">model_front_validation_w_spec</span><span class="p">(</span><span class="n">saildrones</span><span class="p">,</span> <span class="n">models</span><span class="p">,</span> <span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">,</span> <span class="n">buoy_ds</span><span class="p">,</span> <span class="n">ds_spec</span><span class="p">,</span> <span class="n">scatter_step</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">time_step</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/6656edc6ff9e86e3080f9e48831151611236e52ff6d56a616bcfc109a595a006.png" src="_images/6656edc6ff9e86e3080f9e48831151611236e52ff6d56a616bcfc109a595a006.png" />
+</div>
+</div>
+<p><strong>Figure 1: Subplot of ocean variables from models (background maps) and Saildrone measurements along their trajectories (markers). The first saildrone observations are represented with the white marker. The background maps correspond to the time of the first Saildrone observation. Panel (A) shows the sea surface temperature (SST), (B) shows the surface currents, model data are from Naval Coastal Operational Model (NCOM). Panel (C) and (E) show the Significant wave height (<span class="math notranslate nohighlight">\(H_{s}\)</span>) and the dominant wave period (<span class="math notranslate nohighlight">\(T_{p}\)</span>) respectively, model data is from WAVEWATCH III. Panel (D) shows the wind speed, model data is from the fifth generation ECMWF atmospheric reanalysis (ERA-5). Grey arrows depict variable directions according to the model data and red arrows depict variable directions as recorded by the Saildrones. Panel (F) is the frequency-direction wave spectrum observed by the closest wave buoy (station-029).</strong></p>
+<p>#########<br />
+<strong>Figure 2 is a GIF of the evolution of figure 1 over time.</strong> <br />
+<strong>The file size is too large for GitHub to display in a notebook.</strong> <br />
+<strong>The link below will take you to the gif in another tab.</strong> <br />
+#########</p>
+<p><a class="reference external" href="https://github.com/mines-oceanography/saildrone_synthesis/blob/main/figures/refraction_front.gif">Click here to view figure 2</a></p>
+<p><strong>Figure 2: Subplot gif of figure 1. Saildrone observations and trajectory as well as directional wave spectrum evolve as time increases in 30 minute increments.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;sans-serif&#39;</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">12</span> <span class="c1"># decrease fontsize to fit with subplots</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">sd</span><span class="o">.</span><span class="n">single_sd_front_scatters</span><span class="p">(</span><span class="n">pilot_1062</span><span class="p">,</span> <span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">,</span> <span class="n">time_step</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5986f1ac3d3e977e8bee6dd9b4af0b3221a201241f5d5b5cbeb8a8c6de60cdd3.png" src="_images/5986f1ac3d3e977e8bee6dd9b4af0b3221a201241f5d5b5cbeb8a8c6de60cdd3.png" />
+</div>
+</div>
+<p><strong>Figure 3: Zoomed in subplot around Saildrone 1062 trajectory, Saildrone of interest for this particular front. X and Y axes are converted to displacement in kilometers from longitude and latitude.  Plotted variables are (A) sea surface temperature, (B) surface current speed, (C) significant wave height (<span class="math notranslate nohighlight">\(H_s\)</span>), (D) wind speed, and (E) dominant period (<span class="math notranslate nohighlight">\(T_p\)</span>).</strong></p>
+<p>#########<br />
+<strong>Figure 4 is a GIF of the evolution of figure 3 over time with model data and wave spectrum added.</strong> <br />
+<strong>The file size is too large for GitHub to display in a notebook.</strong> <br />
+<strong>The link below will take you to the gif in another tab.</strong> <br />
+#########</p>
+<p><a class="reference external" href="https://github.com/mines-oceanography/saildrone_synthesis/blob/main/figures/sd_1062_zoomed_refraction_front.gif">Click here to view figure 3</a></p>
+<p><strong>Figure 4: Subplot gif of figure 3 with model data and wave spectrum added. Saildrone observations and trajectory as well as directional wave spectrum evolve as time increases. Grey arrows depict variable directions according to the model data and red arrows depict variable directions as recorded by the Saildrone.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">spec</span> <span class="o">=</span> <span class="n">sd</span><span class="o">.</span><span class="n">plot_wave_parameters_over_time</span><span class="p">(</span><span class="n">buoy_ds</span><span class="p">,</span> <span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/2da8264334d5b88150b5b3e9c3e7ef363a3b517b27b4ab2c70e16b50f23c60d7.png" src="_images/2da8264334d5b88150b5b3e9c3e7ef363a3b517b27b4ab2c70e16b50f23c60d7.png" />
+</div>
+</div>
+<p><strong>Figure 5: Static time series subplot of directional wave spectrum calculated from observations recorded by moored CDIP buoy 029. The spectrum represents surface wave energy along wavelength and direction in polar coordinates.</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p><strong>Campaign</strong></p></th>
+<th class="head text-center"><p><strong>Saildrone</strong></p></th>
+<th class="head text-center"><p><strong>Start</strong></p></th>
+<th class="head text-center"><p><strong>End</strong></p></th>
+<th class="head text-center"><p><strong>Mean Sea Surface Temperature (˚C)</strong></p></th>
+<th class="head text-center"><p><strong>Mean Surface Current Speed (m/s)</strong></p></th>
+<th class="head text-center"><p><strong>Mean Significant Height <span class="math notranslate nohighlight">\(H_s\)</span> (m)</strong></p></th>
+<th class="head text-center"><p><strong>Mean Wind Speed (m/s)</strong></p></th>
+<th class="head text-right"><p><strong>Mean Dominant Period <span class="math notranslate nohighlight">\(T_p\)</span> (s)</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Pilot</p></td>
+<td class="text-center"><p>1062</p></td>
+<td class="text-center"><p>10/30 11:00</p></td>
+<td class="text-center"><p>10/30 22:00</p></td>
+<td class="text-center"><p>14.97</p></td>
+<td class="text-center"><p>0.28</p></td>
+<td class="text-center"><p>1.72</p></td>
+<td class="text-center"><p>6.08</p></td>
+<td class="text-right"><p>11.83</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Pilot</p></td>
+<td class="text-center"><p>1072</p></td>
+<td class="text-center"><p>10/30 11:00</p></td>
+<td class="text-center"><p>10/30 22:00</p></td>
+<td class="text-center"><p>15.16</p></td>
+<td class="text-center"><p>0.30</p></td>
+<td class="text-center"><p>1.76</p></td>
+<td class="text-center"><p>6.17</p></td>
+<td class="text-right"><p>11.89</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Pilot</p></td>
+<td class="text-center"><p>1073</p></td>
+<td class="text-center"><p>10/30 11:00</p></td>
+<td class="text-center"><p>10/30 22:00</p></td>
+<td class="text-center"><p>15.08</p></td>
+<td class="text-center"><p>0.31</p></td>
+<td class="text-center"><p>1.86</p></td>
+<td class="text-center"><p>6.12</p></td>
+<td class="text-right"><p>11.95</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Pilot</p></td>
+<td class="text-center"><p>1074</p></td>
+<td class="text-center"><p>10/30 11:00</p></td>
+<td class="text-center"><p>10/30 22:00</p></td>
+<td class="text-center"><p>14.72</p></td>
+<td class="text-center"><p>0.34</p></td>
+<td class="text-center"><p>1.98</p></td>
+<td class="text-center"><p>5.95</p></td>
+<td class="text-right"><p>11.57</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Pilot</p></td>
+<td class="text-center"><p>1075</p></td>
+<td class="text-center"><p>10/30 11:00</p></td>
+<td class="text-center"><p>10/30 22:00</p></td>
+<td class="text-center"><p>15.15</p></td>
+<td class="text-center"><p>0.30</p></td>
+<td class="text-center"><p>1.79</p></td>
+<td class="text-center"><p>6.12</p></td>
+<td class="text-right"><p>11.50</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Table 1: Table summarizing wave variable averages presented for all Saildrones along the time of interest.</strong></p>
+</section>
+<section id="analysis-and-summary">
+<h2>Analysis and summary<a class="headerlink" href="#analysis-and-summary" title="Link to this heading">#</a></h2>
+<p>While travelling west to east over a distance of 34 km, Saildrone 1062 observed an increase in significant wave height of 0.5 meters along with a 1.3˚C decrease in sea surface temperature. Along with these observations, there is no notable change in wind speed which rules out the possibility of increased wave height due to winds. When analyzing the evolution of the observations in figure 2, there is a slight alignment in the wave and current directions. For the concertina effect to be at play in this case, we would expect to see a decrease in wave height due to their rough alignment. However, this is not the case. Because of the 0.5 meter increase in significant wave height we know that concertina can be ruled out. This leaves refraction as the last mechanism that could be at play. Because of the current jet modeled between 124.5˚ and 125˚ longitude, we have reason to believe that refraction is responsible for the observed enhancement in wave height. In addition to this observation, using the <a class="reference external" href="https://github.com/mines-oceanography/mantaray">Mantaray ray tracing Python package</a> developed by Bryce Irving, Bia Villas Bôas, and Guillherme Castelao, we were able to confirm the plausibility of refraction.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="poster_front_summary.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Storm arrival case</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jackson-krieger">Jackson Krieger</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-and-summary">Analysis and summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jackson Krieger
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
